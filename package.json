@@ -1,0 +1,22 @@
+{
+  "name": "jiui",
+  "version": "1.0.0",
+  "description": "A simple FE UI library for every developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovenslove/JIUI.git"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "ovenliu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ovenslove/JIUI/issues"
+  },
+  "homepage": "https://github.com/ovenslove/JIUI#readme"
+}
