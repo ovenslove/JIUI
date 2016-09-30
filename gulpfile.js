@@ -27,10 +27,10 @@ gulp.task('templates',function(){
 /*Sass转换任务*/
 gulp.task('sass', function() {
     gulp.src('./src/sass/*.scss')
-        .pipe(concat('all.scss'))
+        .pipe(concat('jiui.scss'))
         .pipe(sass())
         .pipe(gulp.dest('./dist/css'))
-        .pipe(rename('all.min.css'))
+        .pipe(rename('jiui.min.css'))
         .pipe(cssmin())
         .pipe(gulp.dest('./dist/css'));
 });
@@ -38,11 +38,11 @@ gulp.task('sass', function() {
 // 合并，压缩文件
 gulp.task('scripts',['jshints'], function() {
     gulp.src('./src/js/*.js')
-        .pipe(uglify())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('./dist/js'));
+        .pipe(concat('jiui.js'))         //合并所有文件为all.js
+        .pipe(gulp.dest('./dist/js'))   //输出到指定文件夹
+        .pipe(rename('jiui.min.js'))     //重命名为all.min.js
+        .pipe(uglify())                 //压缩混淆js文件
+        .pipe(gulp.dest('./dist/js'));  //输出到指定文件夹
 });
 
 /*image照片压缩*/
