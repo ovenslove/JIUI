@@ -1,0 +1,73 @@
+/*标准100%*/
+.ji-full-container{
+  height:100%;
+  width: 100%;
+}
+
+
+
+/*ji-tab导航栏*/
+.ji-tab{
+  height:100%;
+  width: 100%;
+    /*顶部导航*/
+    .ji-navbar{
+      height:12vw;
+      width: 100%;
+      background: #EEEEEE;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+        .ji-navbar-item{
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          float: left;
+          width: 0;
+          height:100%;
+          text-align: center;
+          line-height:calc(12vw - 1px);
+          font-size:1rem;
+          display: none;
+            &:not(:last-child){
+              border-right:1px solid #dddddd;
+            }
+            &.active{
+              background: #BBBBBB;
+            }
+        }
+        &.top-navbar{
+          border-bottom: 1px solid #dddddd;
+        }
+        &.bottom-navbar{
+          border-top: 1px solid #dddddd;
+        }
+    }
+    /*主体容器*/
+    .ji-tab-panel{
+      height:calc(100vh - 12vw);
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+        .ji-tab-panel-body{
+          height:100%;
+          width: 100%;
+          z-index:0;
+          zoom: 1;
+          position: absolute;
+          left:0%;
+          top:0;
+          display: none;
+          &.active{
+            display: block;
+            left:0;
+            z-index:10;
+          }
+        }
+    }
+}
+
+/*base-test-color-class*/
+.gray{
+  background: #cccccc;
+}

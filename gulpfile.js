@@ -62,7 +62,7 @@ gulp.task('default', function(){
 gulp.watch([
     './src/js/*.js',
     './src/sass/*.scss',
-    './src/view/*.jade'
+    './src/view/**/*.jade'
 ], function(){
     gulp.run( 'default');
 });
