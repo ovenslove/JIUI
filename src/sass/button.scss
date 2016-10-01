@@ -1,0 +1,44 @@
+//按钮button样式
+//标准button
+.ji-btn{
+  display:inline-block;
+  height:40px;
+  width: 80%;
+  background: inherit;
+  line-height:40px;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size:14px;
+  border: 1px solid #dddddd;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  outline:none;
+  margin: 5px;
+  &.ji-default{
+    background: #f5f5f5;
+    color: #333333;
+    &:active{
+      background: #EEEEEE;
+      //opacity:0.7;
+    }
+  }
+  &.ji-error{
+    background: #FF0033;
+    color: #ffffff;
+    &:active{
+      background: #FF0000;
+      //opacity:0.7;
+    }
+  }
+  &.ji-right{
+    background: #66FF66;
+    color: #333333;
+    &:active{
+      background: #66FF33;
+      //opacity:0.7;
+    }
+  }
+}

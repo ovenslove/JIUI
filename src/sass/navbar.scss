@@ -1,16 +1,8 @@
-/*标准100%*/
-.ji-full-container{
-  height:100%;
-  width: 100%;
-}
-
-
-
-/*ji-tab导航栏*/
+//ji-tab导航栏
 .ji-tab{
   height:100%;
   width: 100%;
-    /*顶部导航*/
+    //顶部导航
     .ji-navbar{
       height:12vw;
       width: 100%;
@@ -43,7 +35,7 @@
           border-top: 1px solid #dddddd;
         }
     }
-    /*主体容器*/
+    //主体容器
     .ji-tab-panel{
       height:calc(100vh - 12vw);
       background: #ffffff;
@@ -67,7 +59,3 @@
     }
 }
 
-/*base-test-color-class*/
-.gray{
-  background: #cccccc;
-}
